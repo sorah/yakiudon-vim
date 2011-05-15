@@ -90,7 +90,7 @@ endfunction
 
 function! s:getid(fakepath)
   let l:suf = substitute(a:fakepath,"^fakepath:","","")
-  if l:suf == "today"
+  if l:suf == "yakiudon:today"
     return strftime("%Y%m%d")
   else
     return l:suf   
